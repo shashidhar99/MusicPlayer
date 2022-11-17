@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    
+    <nav>
+    
+        <ul class= "nav" >
+                <li ><img src ="Logo.png" alt="Music Logo"</li>
+                <li style="padding: 25px">Home</li>
+                &nbsp;
+                <li style="padding: 25px">Menu</li>
+        </ul> 
+        
+    </nav>
+
+        
+    <div class="container">
+        <div class ="songList">
+
+            <div  class="songItemContainer">
+                <h1>Songs</h1>
+                
+                <div class="songItem">
+                    <img src ="covers/Pushpa.jpg"alt= "1">
+                    <span class="songName"></span>
+                    <span class="playItem"><span> 5:00 <i id="1" class="far fa-2x songItemPlay fa-play-circle"></i>  </span></span>
+
+                </div>
+                <div class="songItem">
+                    <img src ="covers/Pushpa1.jpg" alt= "1">
+                    <span class="songName"></span>
+                    <span class="playItem"><span> 3:44 <i id="2" class="far fa-2x songItemPlay fa-play-circle"></i>  </span> <i</span>
+
+                </div>
+                <div class="songItem">
+                    <img src = "covers/Pushpa.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="playItem"><span> 3:49<i id="3" class="far fa-2x songItemPlay fa-play-circle"></i>  </span> <i</span>
+
+                </div>
+                <div class="songItem">
+                    <img src = "covers/Pushpa.jpg" alt= "1">
+                    <span class="songName"></span>
+                    <span class="playItem"><span> 3:56 <i id="4" class="far fa-2x songItemPlay fa-play-circle"></i>  </span> <i</span>
+
+                </div>
+                <div class="songItem">
+                    <img src = "covers/Pushpa.jpg" alt= "1">
+                    <span class="songName"></span>
+                    <span class="playItem"><span>3:47 <i id="5" class="far fa-2x songItemPlay fa-play-circle"></i>  </span> <i</span>
+
+                </div>
+                <div class="songItem">
+                    <img src ="covers/halamithi.jpg" alt= "1">
+                    <span class="songName"></span>
+                    <span class="playItem"><span> 3:42 <i id="6" class="far fa-2x songItemPlay fa-play-circle"></i>  </span><i</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="timer" id="progressBar">
+        <div id = "timer">
+            <span id = "currentDuration">00</span>
+            <span id = "totalDuration"></span>
+        </div>
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="fas fa-3x fa-play-circle" id ="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+    </div>
+    <script src ="index.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+    
+</html>
